@@ -10,7 +10,7 @@ const ResultDisplay: React.FC<ResultDisplayProps> = ({ usdtAmount }) => {
     <StyledInputContainer>
       <label>
         <p>You will receive USDT:</p>
-        <input type="number" value={usdtAmount} />
+        <input value={usdtAmount} />
       </label>
     </StyledInputContainer>
   );

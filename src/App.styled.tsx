@@ -10,7 +10,7 @@ export const StyledAppContainer = styled.div`
   align-items: center;
   color: rgba(255, 255, 255, 0.87);
   background-color: #7fc4e6;
-  padding: 50px 30px;
+  padding: 30px 30px;
   border-radius: 20px;
   box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
     5px 5px 9px rgba(94, 104, 121, 0.3);
