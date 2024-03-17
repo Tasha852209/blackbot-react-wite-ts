@@ -57,7 +57,7 @@ Error generating stack: `+o.message+`
     padding: 10px 5px;
     border-radius: 10px;
   }
-`,Rm=({onEthAmountChange:e})=>{const t=n=>{const r=parseFloat(n.target.value);r>=0&&e(r)};return G.jsx(Gu,{children:G.jsxs("label",{children:[G.jsx("p",{children:"Enter ETH amount:"}),G.jsx("input",{type:"number",min:"0",onChange:t})]})})},$m=({onActionChange:e})=>{const t=n=>{const r=n.target.value;e(r)};return G.jsx(Gu,{children:G.jsxs("label",{children:[G.jsx("p",{children:"Select action:"}),G.jsxs("select",{onChange:t,children:[G.jsx("option",{value:"Select action"}),G.jsx("option",{value:"Buy",children:"Buy"}),G.jsx("option",{value:"Sell",children:"Sell"})]})]})})},Lm=({usdtAmount:e})=>G.jsx(Gu,{children:G.jsxs("label",{children:[G.jsx("p",{children:"You will receive USDT:"}),G.jsx("input",{type:"number",value:e})]})}),Im=Yu.div`
+`,Rm=({onEthAmountChange:e})=>{const t=n=>{const r=parseFloat(n.target.value);r>=0&&e(r)};return G.jsx(Gu,{children:G.jsxs("label",{children:[G.jsx("p",{children:"Enter ETH amount:"}),G.jsx("input",{type:"number",min:"0",onChange:t})]})})},$m=({onActionChange:e})=>{const t=n=>{const r=n.target.value;e(r)};return G.jsx(Gu,{children:G.jsxs("label",{children:[G.jsx("p",{children:"Select action:"}),G.jsxs("select",{onChange:t,children:[G.jsx("option",{value:"Select action"}),G.jsx("option",{value:"Buy",children:"Buy"}),G.jsx("option",{value:"Sell",children:"Sell"})]})]})})},Lm=({usdtAmount:e})=>G.jsx(Gu,{children:G.jsxs("label",{children:[G.jsx("p",{children:"You will receive USDT:"}),G.jsx("input",{value:e})]})}),Im=Yu.div`
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -67,7 +67,7 @@ Error generating stack: `+o.message+`
   align-items: center;
   color: rgba(255, 255, 255, 0.87);
   background-color: #7fc4e6;
-  padding: 50px 30px;
+  padding: 30px 30px;
   border-radius: 20px;
   box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
     5px 5px 9px rgba(94, 104, 121, 0.3);
