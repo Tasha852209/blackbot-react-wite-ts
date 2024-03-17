@@ -13,12 +13,14 @@ const ActionSelector: React.FC<ActionSelectorProps> = ({ onActionChange }) => {
 
   return (
     <StyledInputContainer>
-      <label>Select action:</label>
-      <select onChange={handleActionChange}>
-        <option value="Select action">All</option>
-        <option value="Buy">Buy</option>
-        <option value="Sell">Sell</option>
-      </select>
+      <label>
+        <p>Select action:</p>
+        <select onChange={handleActionChange}>
+          <option value="Select action">All</option>
+          <option value="Buy">Buy</option>
+          <option value="Sell">Sell</option>
+        </select>
+      </label>
     </StyledInputContainer>
   );
 };
