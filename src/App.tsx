@@ -43,6 +43,7 @@ const App: React.FC = () => {
 
   return (
     <StyledAppContainer>
+      <p>Price ETH/USDT: {Number(usdtPrice.toFixed(2))}</p>
       <InputField onEthAmountChange={handleEthAmountChange} />
       <ActionSelector onActionChange={handleActionChange} />
       <ResultDisplay usdtAmount={calculateUsdtAmount()} />

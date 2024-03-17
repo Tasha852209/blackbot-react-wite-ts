@@ -16,7 +16,7 @@ const ActionSelector: React.FC<ActionSelectorProps> = ({ onActionChange }) => {
       <label>
         <p>Select action:</p>
         <select onChange={handleActionChange}>
-          <option value="Select action">All</option>
+          <option value="Select action"></option>
           <option value="Buy">Buy</option>
           <option value="Sell">Sell</option>
         </select>
