@@ -1,25 +1,28 @@
 import React from "react";
 import { StyledInputContainer } from "../InputField/InputField.styled";
+import TripleToggleSwitch from "../TripleToggleSwitch/TripleToggleSwitch";
 
 interface ActionSelectorProps {
-  onActionChange: (action: "Buy" | "Sell" | "Select action") => void;
+  onActionChange: (action: "Buy" | "Sell") => void;
 }
 
 const ActionSelector: React.FC<ActionSelectorProps> = ({ onActionChange }) => {
-  const handleActionChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    const action = event.target.value as "Buy" | "Sell" | "Select action";
-    onActionChange(action);
+  const handleActionChange = (value: string) => {
+    onActionChange(value as "Buy" | "Sell");
   };
 
   return (
     <StyledInputContainer>
       <label>
         <p>Select action:</p>
-        <select onChange={handleActionChange}>
-          <option value="Select action"></option>
-          <option value="Buy">Buy</option>
-          <option value="Sell">Sell</option>
-        </select>
+        <TripleToggleSwitch
+          onChange={handleActionChange}
+          labels={{
+            left: { title: "Buy", value: "Buy" },
+            // center: { title: "Select action", value: "Select action" },
+            right: { title: "Sell", value: "Sell" },
+          }}
+        />
       </label>
     </StyledInputContainer>
   );

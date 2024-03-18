@@ -15,6 +15,7 @@ export const StyledInputContainer = styled.div`
     border-radius: 10px;
   }
   select {
+    position: relative;
     width: 250px;
     padding: 10px 5px;
     border-radius: 10px;

@@ -6,9 +6,7 @@ import { StyledAppContainer } from "./App.styled";
 
 const App: React.FC = () => {
   const [ethAmount, setEthAmount] = useState<number>(0);
-  const [action, setAction] = useState<"Buy" | "Sell" | "Select action">(
-    "Select action"
-  );
+  const [action, setAction] = useState<"Buy" | "Sell">("Buy");
   const [usdtPrice, setUsdtPrice] = useState<number>(0);
 
   useEffect(() => {
@@ -28,9 +26,7 @@ const App: React.FC = () => {
     setEthAmount(amount);
   };
 
-  const handleActionChange = (
-    selectedAction: "Buy" | "Sell" | "Select action"
-  ) => {
+  const handleActionChange = (selectedAction: "Buy" | "Sell") => {
     setAction(selectedAction);
   };
 
