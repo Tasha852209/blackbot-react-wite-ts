@@ -20,4 +20,7 @@ export const StyledInputContainer = styled.div`
     padding: 10px 5px;
     border-radius: 10px;
   }
+  p {
+    font-weight: 600;
+  }
 `;
