@@ -19,7 +19,6 @@ const ActionSelector: React.FC<ActionSelectorProps> = ({ onActionChange }) => {
           onChange={handleActionChange}
           labels={{
             left: { title: "Buy", value: "Buy" },
-            // center: { title: "Select action", value: "Select action" },
             right: { title: "Sell", value: "Sell" },
           }}
         />
