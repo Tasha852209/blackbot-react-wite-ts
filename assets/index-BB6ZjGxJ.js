@@ -58,6 +58,9 @@ Error generating stack: `+i.message+`
     padding: 10px 5px;
     border-radius: 10px;
   }
+  p {
+    font-weight: 600;
+  }
 `,Rm=({onEthAmountChange:e})=>{const t=n=>{const r=parseFloat(n.target.value);e(r)};return j.jsx(Gu,{children:j.jsxs("label",{children:[j.jsx("p",{children:"Enter ETH amount:"}),j.jsx("input",{type:"number",min:"0",onChange:t})]})})},$m=hi.div`
   input[type="radio"] {
     display: none;
@@ -281,4 +284,7 @@ Error generating stack: `+i.message+`
   border-radius: 20px;
   box-shadow: -5px -5px 9px rgba(255, 255, 255, 0.45),
     5px 5px 9px rgba(94, 104, 121, 0.3);
+  p {
+    font-weight: 600;
+  }
 `,Dm=()=>{const[e,t]=Be.useState(0),[n,r]=Be.useState("Buy"),[l,i]=Be.useState(0);Be.useEffect(()=>{const c=new WebSocket("wss://stream.binance.com:9443/ws/ethusdt@trade");return c.onmessage=m=>{const h=JSON.parse(m.data);i(parseFloat(h.p))},()=>{c.close()}},[]);const o=c=>{t(c)},u=c=>{r(c)},s=()=>n?Number((e*l).toFixed(2)):0;return j.jsxs(jm,{children:[j.jsxs("p",{children:["Price ETH/USDT: ",Number(l.toFixed(2))]}),j.jsx(Rm,{onEthAmountChange:o}),j.jsx(Om,{usdtAmount:s()}),j.jsx(Im,{onActionChange:u})]})};Yi.createRoot(document.getElementById("root")).render(j.jsx(En.StrictMode,{children:j.jsx(Dm,{})}));
