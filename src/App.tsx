@@ -31,7 +31,7 @@ const App: React.FC = () => {
   };
 
   const calculateUsdtAmount = (): number => {
-    if (action === "Buy" || action === "Sell") {
+    if (action) {
       return Number((ethAmount * usdtPrice).toFixed(2));
     }
     return 0;
