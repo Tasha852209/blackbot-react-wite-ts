@@ -8,9 +8,8 @@ interface InputFieldProps {
 const InputField: React.FC<InputFieldProps> = ({ onEthAmountChange }) => {
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const amount = parseFloat(event.target.value);
-    if (amount >= 0) {
-      onEthAmountChange(amount);
-    }
+
+    onEthAmountChange(amount);
   };
 
   return (
